@@ -14,8 +14,10 @@ public class Canvas extends JComponent {
 		super.paintComponents(g);
 
 		Graphics2D g2d = (Graphics2D) g;
+		g2d.setColor(Color.WHITE);
+		g2d.fillRect(0, 0, getWidth(), getHeight());
+		g2d.translate(getWidth() / 2 - BODY.getWidth() / 2, getHeight() / 2 - BODY.getHeight() / 2);
 
-		g2d.clearRect(0, 0, 512, 512);
 		g2d.drawImage(BODY, 0, 0, null);
 		//START ARM ALIGNMENT
 		g2d.translate(298, 286);
