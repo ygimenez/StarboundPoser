@@ -94,7 +94,7 @@ public class Poser extends JFrame {
 		});
 
 		setTitle("Starbound Poser");
-		setSize(1006, 540);
+		setSize(1024, 540);
 		setLocationRelativeTo(null);
 		setVisible(true);
 		canvas.repaint();
